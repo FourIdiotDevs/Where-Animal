@@ -5,7 +5,7 @@ function App() {
 
   useEffect(() => {
     // This fetches data from your backend
-    fetch('http://localhost:5001/api/status')
+    fetch('/api/status')
       .then(res => res.json())
       .then(data => setStatus(data.message))
       .catch(err => setStatus("Error: " + err));
